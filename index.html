@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" rel="noopener noreferrer">Skip to main content</a>
+    <header class="header">
+        <h1>Front-end Development</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Services</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            🌙 Dark Mode
+        </button>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Navigation or more info</p>
+        </aside>
+
+        <main id="main-content" class="content">
+            <section>
+                <h2>About Us</h2>
+                <p>Welcome to our website. We are dedicated to providing the best service possible. I am Ifa Bogale. I am a passionate web developer and designer. I graduated from the University of Haramaya with a degree in Computer Science. I am professional in HTML, CSS, and JavaScript.</p>
+            </section>
+            <section>
+                <h2>Our Services</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Web Development</h3>
+                        <p>We build responsive and user-friendly websites tailored to your needs.</p>
+                    </article>
+                    <article class="card">
+                        <h3>UI/UX Design</h3>
+                        <p>Our design team creates intuitive and engaging user interfaces.</p>  
+                    </article>
+                    <article class="card">
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your website's visibility on search engines with our SEO services.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="accordion">
+                <h2>
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="panel-1">What is Web Development?</button>
+                </h2>
+                <div id="panel-1" class="accordion-panel" hidden>
+                    <p>Web development is the process of building websites and web applications. Web development is the work involved in developing a website for the Internet or an intranet. It can range from simple static pages to complex web applications.</p>
+                </div>
+            </section>
+            <section class="accordion">
+                <h2>
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="panel-2"> What is Front-end Development?</button>
+                </h2>
+                <div class="accordion-panel" id="panel-2" hidden>
+                    <p>Front-end development refers to the development of the user interface and user experience of a website or web application. It involves creating the visual elements and interactive components that users see and interact with in their browser.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Users (Fetch from API)</h2>
+                <button id="load-users-btn">Load Users</button>
+                <p id="status"></p>
+                <div id="users" class="cards"></div>
+            </section>
+            <section>       
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to get in touch, please reach out to us via our contact form.</p>
+            </section>
+            <section>
+                <h2>Contact Form</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required>
+                        <small class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required>
+                        <small class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                        <small class="error"></small>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Front-end Development. All rights reserved.</p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
