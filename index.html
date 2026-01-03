@@ -12,9 +12,9 @@
         <h1>Front-end Development</h1>
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">About</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Services</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li><a href="#about" rel="noopener noreferrer">About</a></li>
+                <li><a href="#services" rel="noopener noreferrer">Services</a></li>
+                <li><a href="#contact" rel="noopener noreferrer">Contact</a></li>
             </ul>
         </nav>
         <button id="theme-toggle" aria-label="Toggle Dark Mode">
@@ -23,21 +23,33 @@
     </header>
     <div class="layout">
         <aside class="sidebar">
-            <h2>Sidebar</h2>
-            <p>Navigation or more info</p>
+            <h2>Additional Information</h2>
+            <ul>
+                <li>📍 Ethiopia</li>
+                <li>💻 Front-end Developer</li>
+                <li>🎓 BSc Computer Science</li>
+                <li>⚡ HTML • CSS • JavaScript</li>
+            </ul>
         </aside>
 
         <main id="main-content" class="content">
-            <section>
+            <section id="about">
                 <h2>About Us</h2>
                 <p>Welcome to our website. We are dedicated to providing the best service possible. I am Ifa Bogale. I am a passionate web developer and designer. I graduated from the University of Haramaya with a degree in Computer Science. I am professional in HTML, CSS, and JavaScript.</p>
             </section>
-            <section>
+            <section id="services">
                 <h2>Our Services</h2>
                 <div class="cards">
                     <article class="card">
                         <h3>Web Development</h3>
                         <p>We build responsive and user-friendly websites tailored to your needs.</p>
+                        <a 
+                            href="https://github.com/IfaBogg/frontend-learning" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            View Project →
+                        </a>
                     </article>
                     <article class="card">
                         <h3>UI/UX Design</h3>
@@ -49,7 +61,7 @@
                     </article>
                 </div>
             </section>
-            <section class="accordion">
+            <section class="accordion" id="accordion">
                 <h2>
                     <button class="accordion-btn" aria-expanded="false" aria-controls="panel-1">What is Web Development?</button>
                 </h2>
@@ -57,7 +69,7 @@
                     <p>Web development is the process of building websites and web applications. Web development is the work involved in developing a website for the Internet or an intranet. It can range from simple static pages to complex web applications.</p>
                 </div>
             </section>
-            <section class="accordion">
+            <section class="accordion" id="accordion-2">
                 <h2>
                     <button class="accordion-btn" aria-expanded="false" aria-controls="panel-2"> What is Front-end Development?</button>
                 </h2>
@@ -65,13 +77,13 @@
                     <p>Front-end development refers to the development of the user interface and user experience of a website or web application. It involves creating the visual elements and interactive components that users see and interact with in their browser.</p>
                 </div>
             </section>
-            <section>
+            <section id="users">
                 <h2>Users (Fetch from API)</h2>
                 <button id="load-users-btn">Load Users</button>
                 <p id="status"></p>
                 <div id="users" class="cards"></div>
             </section>
-            <section>       
+            <section id="contact">       
                 <h2>Contact Us</h2>
                 <p>If you have any questions or would like to get in touch, please reach out to us via our contact form.</p>
             </section>
@@ -99,9 +111,16 @@
         </main>
     </div>
     <footer class="footer">
-        <p>&copy; 2025 Front-end Development. All rights reserved.</p> 
-    </footer>
+        <p>&copy; 2025 Front-end Development</p>
+        <div class="social-links">
+            <a href="https://github.com/IfaBogg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+    </footer>    
 
+    <button id="back-to-top" aria-label="Back to top">⬆️</button>
     <script src="script.js"></script>
+
 </body>
 </html>

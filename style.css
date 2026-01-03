@@ -1,5 +1,6 @@
 html{
     font-size: 16px; /* Base font size */
+    scroll-behavior: smooth;
 }
 /* theme variables */
 :root {
@@ -125,6 +126,13 @@ main {
     background-color: var(--card-bg);
     padding: 16px;
 }
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
 .content {
     background-color: var(--card-bg);
     padding: 16px;
@@ -243,4 +251,31 @@ input:focus-visible, textarea:focus-visible {
 body.dark .accordion-btn {
     background: #2a2a2a;
     color: #f4f4f4;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 10px;
+}
+.social-links a {
+    color: #f4f4f4;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
