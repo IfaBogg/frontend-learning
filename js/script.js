@@ -116,9 +116,9 @@ let userLoaded = false;
 async function fetchUsers() {
     if (userLoaded) return;
 
-    const btn = $("load-users-btn");
+    const btn = $("#load-users-btn");
     btn.disabled = true;
-    btn.textContent = "Loading..."
+    btn.textContent = "Loading...";
 
     $("#status").textContent = "Loading users...";
     try {
@@ -127,6 +127,7 @@ async function fetchUsers() {
         renderUsers(users);
         userLoaded = true;
         $("#status").textContent = "Users loaded";
+        btn.textContent = "Loaded";
     } catch {
         $("#status").textContent = "Failed to load users.";
         btn.disabled = false;
