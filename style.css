@@ -279,3 +279,9 @@ body.dark .accordion-btn {
     height: 40px;
     cursor: pointer;
 }
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
