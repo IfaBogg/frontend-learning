@@ -5,7 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-end Development</title>
+    <!-- SEO -->
+    <title>Ifa Bogale | Frontend Developer Portfolio</title>
+    <meta name="description" content="Frontend Developer portfolio of Ifa Bogale. Skilled in HTML, CSS, JavaScript, responsive design, and accessibility.">
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Ifa Bogale">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -45,13 +49,9 @@
                     <article class="card">
                         <h3>Web Development</h3>
                         <p>We build responsive and user-friendly websites tailored to your needs.</p>
-                        <a 
-                            href="https://github.com/IfaBogg/frontend-learning" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
+                        <a href="projects.html" target="_blank" rel="noopener noreferrer">
                             View Project →
-                        </a>
+                        </a>                        
                     </article>
                     <article class="card">
                         <h3>UI/UX Design</h3>
@@ -79,7 +79,7 @@
                     <p>Front-end development refers to the development of the user interface and user experience of a website or web application. It involves creating the visual elements and interactive components that users see and interact with in their browser.</p>
                 </div>
             </section>
-            <section id="users">
+            <section id="users-section">
                 <h2>Users (Fetch from API)</h2>
                 <button id="load-users-btn">Load Users</button>
                 <p id="status"></p>
@@ -107,7 +107,7 @@
                         <textarea id="message" rows="4" required></textarea>
                         <small class="error"></small>
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" aria-label="Submit form">Submit</button>
                 </form>
             </section>
         </main>
