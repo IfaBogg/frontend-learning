@@ -136,7 +136,7 @@ async function fetchUsers() {
 }
 
 function renderUsers(users) {
-    const container = $("#users");
+    const container = $("#users-list");
     users.forEach(user => {
         container.innerHTML += `
             <article class="card">
