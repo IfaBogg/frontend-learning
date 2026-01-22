@@ -54,6 +54,10 @@ body.dark input::placeholder,
 body.dark textarea::placeholder {
     color: #aaa;
 }
+body.dark nav a {
+    color: #f4f4f4;
+}
+
 
 
 /* pa variables */
