@@ -136,18 +136,27 @@ async function fetchUsers() {
 }
 
 function renderUsers(users) {
-    const container = $("#users-list");
+    const container = $("#users");
+    let html = "";
+
     users.forEach(user => {
-        container.innerHTML += `
+        html += `
             <article class="card">
                 <h3>${user.name}</h3>
                 <p><strong>Email:</strong> ${user.email}</p>
                 <p><strong>Phone:</strong> ${user.phone}</p>
-                <p><strong>Website:</strong> <a href="http://${user.website}" target="_blank" rel="noopener noreferrer">${user.website}</a></p>
+                <p><strong>Website:</strong>
+                    <a href="http://${user.website}" target="_blank" rel="noopener noreferrer">
+                        ${user.website}
+                    </a>
+                </p>
             </article>
         `;
     });
+
+    container.innerHTML = html;
 }
+
 
 // Dark mode toggle
 function initTheme() {
@@ -185,13 +194,14 @@ document.addEventListener("DOMContentLoaded", () => {
 // Back to Top Button
 const backToTop = document.getElementById("back-to-top");
 
-window.addEventListener("scroll", () => {
-    requestAnimationFrame(() => {
-        backToTop.style.display =
-            window.scrollY > 300 ? "block" : "none";
-    });
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const backToTop = document.getElementById("back-to-top");
 
-backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.addEventListener("scroll", () => {
+        backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });
