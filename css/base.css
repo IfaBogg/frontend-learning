@@ -1,0 +1,43 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #ffffff;
+    --header-bg: #f4f4f4;
+    --input-bg: #ffffff;
+    --input-text: #000000;
+    --input-border: #cccccc;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  p {
+    max-width: 65ch;
+  }
+  
+  ::placeholder {
+    color: #aaa;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 2px;
+  }
+  
