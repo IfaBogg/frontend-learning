@@ -31,4 +31,6 @@ body.dark {
   body.dark .error {
     color: #ff6b6b;
   }
-  
+  body.dark .card {
+    background-color: #1e1e1e;
+  }
