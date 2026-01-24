@@ -3,6 +3,7 @@
 import { initAccordion } from "./accordion.js";
 import { initFormValidation } from "./form.js";
 import { initTheme } from "./theme.js";
+import { loadUsers } from "./users.js";
 
 function initBackToTop() {
   const btn = document.getElementById("back-to-top");
@@ -22,4 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initFormValidation();
   initTheme();
   initBackToTop();
+  loadUsers();
 });
