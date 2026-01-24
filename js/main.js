@@ -1,27 +1,14 @@
-// main.js
+import { initAccordion } from "./features/accordion.js";
+import { initFormValidation } from "./features/form.js";
+import { initTheme } from "./features/theme.js";
+import { loadUsers } from "./features/users.js";
+import { initBackToTop } from "./features/backToTop.js";
 
-import { initAccordion } from "./accordion.js";
-import { initFormValidation } from "./form.js";
-import { initTheme } from "./theme.js";
-import { loadUsers } from "./users.js";
-
-function initBackToTop() {
-  const btn = document.getElementById("back-to-top");
-  if (!btn) return;
-
-  window.addEventListener("scroll", () => {
-    btn.style.display = window.scrollY > 300 ? "block" : "none";
-  });
-
-  btn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   initAccordion();
   initFormValidation();
   initTheme();
-  initBackToTop();
   loadUsers();
+  initBackToTop();
 });
